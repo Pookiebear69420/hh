@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZenZation</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link rel="stylesheet" href="index.css">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+  <!-- UV Scripts -->
+  <script src="uv/uv.bundle.js" charset="UTF-8" defer></script>
+  <script src="uv/uv.config.js" charset="UTF-8" defer></script>
+  <script src="register-sw.js" charset="UTF-8" defer></script>
+  <script src="search.js" charset="UTF-8" defer></script>
+  <script src="index.js" charset="UTF-8" defer></script>
+
+  <script>
+    function autofill(url) {
+      document.getElementById("uv-address").value = url;
+      document.getElementById("uv-form").submit();
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Main Content -->
+  <div id="content">
+    <h1>Be smart with what you search</h1>
+
+    <!-- Errors -->
+    <div class="desc left-margin">
+      <p id="uv-error"></p>
+      <pre id="uv-error-code"></pre>
+    </div>
+
+    <!-- Footer Icons -->
+    <div class="icons">
+      <a href="https://discord.gg/ZYsTSRT4Ez" target="_blank" class="fa-brands fa-discord"></a>
+      <a href="https://github.com/Pookiebear69420/static/tree/main" target="_blank" class="fa-brands fa-github"></a>
+    </div>
+  </div> 
+</body>
+</html>

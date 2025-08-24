@@ -1,0 +1,6 @@
+name = "my-worker-site"
+main = "index.js"
+compatibility_date = "2025-08-15"
+
+[site]
+bucket = "./static/static" # where index.html is

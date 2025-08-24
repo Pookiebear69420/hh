@@ -1,0 +1,7 @@
+name = "my-static-site"
+main = "index.js" # or omit if you don’t have JS
+compatibility_date = "2025-08-15"
+
+[site]
+bucket = "./static/static" # path to folder with index.html
+entry-point = "workers-site"
